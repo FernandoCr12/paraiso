@@ -1,0 +1,158 @@
+/* Estilos generales */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0476d9;
+    padding: 20px;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+}
+
+button {
+    display: block;
+    width: 120px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #0476d9;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    background-color: #015b9a;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+
+/* Estilos del modal */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #d9e8f9;
+    margin: 20% auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+}
+
+.close {
+    color: #ccc;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content h2 {
+    text-align: center;
+    color: #0476d9;
+    margin-bottom: 20px;
+}
+
+.modal-content form label {
+    color: #0476d9;
+}
+
+.modal-content form input[type="text"],
+.modal-content form input[type="number"],
+.modal-content form select,
+.modal-content form button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #0476d9;
+    border-radius: 3px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.modal-content form button {
+    background-color: #0476d9;
+    color: #fff;
+    cursor: pointer;
+}
+
+.modal-content form button:hover {
+    background-color: #015b9a;
+}
+
+
+/* Estilos de la tabla */
+
+#huéspedes-table {
+    background-color: #d9e8f9;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#huéspedes-table th,
+#huéspedes-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+#huéspedes-table th {
+    background-color: #0476d9;
+    color: #fff;
+}
+
+#huéspedes-table td span.dia-ingreso {
+    display: block;
+    padding: 5px;
+    background-color: #0476d9;
+    color: #fff;
+    border-radius: 3px;
+    text-align: center;
+}
+
+#huéspedes-table td span.hora-ingreso {
+    display: block;
+    padding: 5px;
+    background-color: #0476d9;
+    color: #fff;
+    border-radius: 3px;
+    text-align: center;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tabla de Huéspedes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="reservas.css">
+</head>
+
+<body>
+    <header>
+        <h1>Hotel PARAISO</h1>
+    </header>
+
+    <button id="agregar-btn">Agregar</button>
+
+    <table id="huéspedes-table">
+        <thead>
+            <tr>
+                <th>Número</th>
+                <th>Habitación</th>
+                <th>Nombre completo</th>
+                <th>C.I.</th>
+                <th>Tipo de estancia</th>
+                <th>Día de ingreso</th>
+                <th>Hora de ingreso</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="fila-nueva" style="display: none;">
+                <td class="numero-habitacion"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><span class="dia-ingreso"></span></td>
+                <td><span class="hora-ingreso"></span></td>
+                <td>
+                    <button class="borrar-btn">Borrar</button>
+                </td>
+            </tr>
+            <!-- Agrega más filas según sea necesario -->
+        </tbody>
+    </table>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Agregar Huésped</h2>
+            <form id="agregar-form">
+
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" required>
+                <label for="numero-habitacion">Habitación:</label>
+                <select id="numero-habitacion" required>
+                    <option value="">Seleccione el número de habitación</option>
+                    <option value="1">Hab. 1</option>
+                    <option value="2">Hab. 2</option>
+                    <option value="3">Hab. 3</option>
+                    <option value="4">Hab. 4</option>
+                    <option value="5">Hab. 5</option>
+                    <option value="6">Hab. 6</option>
+                    <option value="7">Hab. 7</option>
+                    <option value="8">Hab. 8</option>
+                    <option value="9">Hab. 9</option>
+                    <option value="10">Hab. 10</option>
+                </select>
+
+                <label for="ci">C.I.:</label>
+                <input type="text" id="ci" required>
+
+                <label for="monto">Monto a cancelar:</label>
+                <input type="number" id="monto" required>
+
+                <label for="tipo-estancia">Tipo de estancia:</label>
+                <select id="tipo-estancia" required>
+                    <option value="">Seleccione el tipo de estancia</option>
+                    <option value="momentaneo">Momentáneo</option>
+                    <option value="noche">Noche</option>
+                    <option value="dia-completo">Día completo (24 horas)</option>
+                </select>
+
+                <label for="dia-ingreso">Día de ingreso:</label>
+                <input type="date" id="dia-ingreso" required>
+
+                <label for="hora-ingreso">Hora de ingreso:</label>
+                <input type="time" id="hora-ingreso" required>
+
+                <button type="submit">Agregar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="reservas.js"></script>
+</body>
+
+</html>
